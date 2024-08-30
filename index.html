@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado Papá</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    const onClickLetterHandler = (letter) => {
+        const result = document.querySelector('.result')
+
+        if(letter==='backspace'){
+            result.value = result.value.slice(0, -1)
+            return
+        }
+
+        if(letter==='space'){
+            result.value += ' '
+            return
+        }
+
+        if(letter==='deleteAll'){
+            result.value = ''
+            return
+        }
+
+        result.value += letter
+    }
+</script>
+
+<body>
+    <div class="keyboardContainer">
+        <textarea 
+            class="result"
+        ></textarea>
+        <section class="letters">
+            <div class="backspace">
+                <span 
+                    onclick="onClickLetterHandler('backspace')"
+                >
+                    Borrar
+                </span>
+                <span 
+                    onclick="onClickLetterHandler('deleteAll')"
+                >
+                    Borrar Todo
+                </span>
+            </div>
+            <div class="vowels">
+                <div>
+                    <span onclick="onClickLetterHandler('A')">A</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('E')">E</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('I')">I</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('O')">O</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('U')">U</span>
+                </div>
+            </div>
+
+            <div class="consonants">
+                <div>
+                    <span onclick="onClickLetterHandler('B')">B</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('C')">C</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('D')">D</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('F')">F</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('G')">G</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('H')">H</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('J')">J</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('K')">K</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('L')">L</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('M')">M</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('N')">N</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('P')">P</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('Q')">Q</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('R')">R</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('S')">S</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('T')">T</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('V')">V</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('W')">W</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('X')">X</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('Y')">Y</span>
+                </div>
+                <div>
+                    <span onclick="onClickLetterHandler('Z')">Z</span>
+                </div>
+            </div>
+
+            <div class="space">
+                <span onclick="onClickLetterHandler('space')">Espacio</span>
+            </div>
+
+           
+            </div>
+        </section>
+    </div>
+</body>
+</html>

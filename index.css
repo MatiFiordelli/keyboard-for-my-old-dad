@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  scale: 1;
+}
+body .keyboardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100vw;
+}
+body .keyboardContainer .result {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90vw;
+}
+body .keyboardContainer .letters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .keyboardContainer .letters .vowels, body .keyboardContainer .letters .consonants {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .keyboardContainer .letters .vowels > div > span {
+  background-color: rgb(195, 253, 191);
+}
+body .keyboardContainer .letters .consonants {
+  flex-wrap: wrap;
+}
+body .keyboardContainer .letters .consonants > div > span {
+  background-color: navajowhite;
+}
+body .keyboardContainer .letters .space {
+  margin: 0 auto;
+}
+body .keyboardContainer .letters .space > span {
+  font-size: 1.5rem;
+  background-color: navajowhite;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .keyboardContainer .letters .backspace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+body .keyboardContainer .letters .backspace span:first-child {
+  background-color: lightgray;
+  width: 25%;
+}
+body .keyboardContainer .letters .backspace span:last-child {
+  background-color: darkgray;
+  width: 25%;
+}
+body .keyboardContainer div span {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  transition: 250ms;
+  padding: 5px;
+}
+body .keyboardContainer div span:active {
+  color: red;
+  border: 2px solid red;
+  scale: 110%;
+}/*# sourceMappingURL=index.css.map */
