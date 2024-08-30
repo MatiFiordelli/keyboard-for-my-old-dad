@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 1rem;
-  scale: 1;
 }
 body .keyboardContainer {
   display: flex;
@@ -10,13 +9,12 @@ body .keyboardContainer {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  width: 100vw;
 }
 body .keyboardContainer .result {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  width: 90vw;
+  width: 80%;
 }
 body .keyboardContainer .letters {
   display: flex;
